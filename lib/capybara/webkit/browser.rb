@@ -258,7 +258,7 @@ https://github.com/thoughtbot/capybara-webkit/wiki/Reporting-Crashes
 
     def set_proxy(options = {})
       options = default_proxy_options.merge(options)
-      command("SetProxy", options[:host], options[:port], options[:user], options[:pass])
+      command("SetProxy", options[:host], options[:port], options[:user], options[:pass], options[:type])
     end
 
     def clear_proxy
